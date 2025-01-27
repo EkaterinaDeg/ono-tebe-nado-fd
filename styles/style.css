@@ -1,7 +1,20 @@
 .body { 
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
     box-sizing: border-box;
+    width: 1100px;
+    align-items: center;
+    }
+
+.main {
+    display: flex;
+    font-weight: normal;
     margin: auto;
-    flex-direction: row;
+    font-size: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1100px;
 }
 
 .header {
@@ -54,9 +67,18 @@
 }
 
 .cover { 
+    background-image: url('/images/cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 1100px;
     height: 757px;
     top: 293px;
+    top: 293px;
+    background-image: url('C:/Users/79122/Desktop/Ekaterina_D/first-project/ono-tebe-nado-fd/images/cover.gpg')
+    background-repeat: no-reapeat;
+    background-repeat: right center;
+    background-size: 95% auto;
+    top: 293px;    
     background-image: url('C:/Users/79122/Desktop/Ekaterina_D/first-project/ono-tebe-nado-fd/images/cover.gpg')
     background-repeat: no-reapeat;
     background-repeat: right center;
@@ -92,25 +114,22 @@
     color: #000;
 }
 
-
-
-.lots {
-width: 1052px;
-height: 723px;
-top: 1230px;
-left: 24px;
-gap: 0px;
-opacity: 0px;
+.lots { 
+    display: grid;
+    width: 1100px;
+    grid-template-columns: 30% 30% 30%;
+    gap: 40;
+    grid-template-rows: auto;
 }
 
 .frame1,
 .frame2,
 .frame3 {
-width: 334px;
-height: 596px;
-top: 74px;
-gap: 0px;
-opacity: 0px;
+    width: 334px;
+    height: 596px;
+    top: 74px;
+    gap: 0px;
+    opacity: 0px;
 }
 
 .more {
@@ -153,7 +172,7 @@ opacity: 0px;
     color: #000;
 }
 
-.footer {
+.footer { display: flex;
     width: 1100px;
     height: 180px;
     top: 2848px;
