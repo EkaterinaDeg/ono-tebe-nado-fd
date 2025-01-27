@@ -1,9 +1,22 @@
-.header {
-width: 1100px;
-height: 293px;
+.body { 
+    box-sizing: border-box;
+    margin: auto;
+    flex-direction: row;
 }
 
-.menu {
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1100px;
+    height: 293px;
+}
+
+.main {
+    display: flex;
+}
+
+.header_menu {
     width: 391.48px;
     height: 22px;
     top: 133px;
@@ -20,7 +33,7 @@ height: 293px;
     text-decoration-skip-ink: none;  
 }
 
-.logo {
+.header_logo {
     width: 148px;
     height: 105px;
     top: 92px;
@@ -29,7 +42,7 @@ height: 293px;
     opacity: 0px;
 }
 
-.contact {
+.header_contact {
     width: 240px;
     height: 98px;
     top: 95px;
@@ -40,12 +53,14 @@ height: 293px;
     color: #000;   
 }
 
-.cover {
-width: 1100px;
-height: 757px;
-top: 293px;
-gap: 0px;
-opacity: 0px;
+.cover { 
+    width: 1100px;
+    height: 757px;
+    top: 293px;
+    background-image: url('C:/Users/79122/Desktop/Ekaterina_D/first-project/ono-tebe-nado-fd/images/cover.gpg')
+    background-repeat: no-reapeat;
+    background-repeat: right center;
+    background-size: 95% auto;
 }
 
 .title {
@@ -77,12 +92,7 @@ opacity: 0px;
     color: #000;
 }
 
-.img {
-    width: 1100px;
-    height: 757px;
-    gap: 0px;
-    opacity: 0px;     
-}
+
 
 .lots {
 width: 1052px;
@@ -102,6 +112,7 @@ top: 74px;
 gap: 0px;
 opacity: 0px;
 }
+
 .more {
     width: 192px;
     height: 25px;
