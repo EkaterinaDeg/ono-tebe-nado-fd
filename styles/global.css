@@ -15,13 +15,14 @@ body {
   grid-template-rows: 757px 723px 595px;
   grid-template-columns: 1100px;
   margin: 0;
-  justify-content: center;
+  place-content: center;
 }
 
 main { 
-  box-sizing: border-box;
+  
   flex-direction: column;
   font-family: Raleway, sans-serif;
+  place-items: center;
 }
 
 h1,
