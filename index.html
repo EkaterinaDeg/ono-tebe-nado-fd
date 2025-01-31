@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./fonts/fonts.css"/>
+    <link rel="stylesheet" href="./styles/global.css"/>
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
 
   <body>
     <header class="header"> 
-      <section class="header_menu">
-        <a class="header_menu_main" href="#0">Главная</a>
-        <a class="header_menu_view_lots" href="#0">Посмотреть лоты</a>
-        <a class="header_menu_about_auction" href="#0">Об аукционе</a>
-      </section>
+      <nav class="menu header_menu">
+        <ul>
+          <li class="header_menu_list_active"><a>главная</a></li>
+          <li class="header_menu_list_view_lots"><a href="#0">посмотреть лоты</a></li>
+          <li class="header_menu_list_about_auction"><a href="#0">об аукционе</a></li>
+        </ul>
+      </nav>
       <section class="header_logo"></section>
-      <section class="header_contact">
+      <section class="contact header_contact">
         <p class="discription_text">
-          <span class="discription_text_phone_number">+9 999 555 5555</span>
-          <span class="discription_text_mail">info@sobaka.ge</span>
-          <span class="discription_text_adress">наб. Принсенграхт 263- 265, Амстердам</span>
+          <span class="discription_text_phone_number">+9 999 555 5555</span><br>
+          <span class="discription_text_mail">info@sobaka.ge</span><br>
+          <span class="discription_text_adress">наб. Принсенграхт 263-<br>
+            265, Амстердам</span>
         </p>
       </section>
     </header>
@@ -30,41 +33,94 @@
     <main>
      <section class="cover">
         <h1 class="title">
-          <span class="accent-start">ОНО</span>
-          <span class="accent-center">ТЕБЕ</span>
-          <span class="accent-right">НАДО</span>
+          <span class="aligned_text">ОНО</span>
+          <span class="aligned_text aligned_text_center">ТЕБЕ</span>
+          <span class="aligned_text aligned_text_right">НАДО</span>
         </h1>
         <section class="discription">
-          <p class="discription_text">
+          <p class="cover_discription_text">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="auction-button" type="button">
+          <button class="auction_button" type="button">
             Сделать ставку</button>
         </section>
         <section class="overlay"></section>    
      </section>
      
       <section class="lots">
-        <section class="frame1"><img src="C:/Users/79122/Desktop/Ekaterina_D/first-project/ono-tebe-nado-fd/images/card-lot-01.jpg">          
+        <h2 class="head_lots">лоты</h2>
+
+        <section class="primary_lots_film">
+          <section class="primary_lots_card_content">
+            <h3 class="introduction_lot">Фильм режиссёра, который бросил киношколу</h3>
+            <p class="frame_text">
+             Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+            </p>
+          </section>
+          <section class="blackout"></section>
         </section>
-        <section class="frame2"><img src="C:/Users/79122/Desktop/Ekaterina_D/first-project/ono-tebe-nado-fd/images/card-lot-02.jpg"></section>
-        <section class="frame3"><img src="C:/Users/79122/Desktop/Ekaterina_D/first-project/ono-tebe-nado-fd/images/card-lot-03.jpg"></section>
-        <section class="more"></section>
-      </section>
-     
+
+        <section class="primary_lots_book">
+          <section class="primary_lots_card_content">
+            <h3 class="introduction_lot">Книга, где описан один скучный день из жизни рекламного агента</h3>
+            <p class="frame_text">
+             Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+            </p>
+          </section>
+          <section class="blackout"></section>
+        </section>
+
+        <section class="primary_lots_picture">
+          <section class="primary_lots_card_content">
+            <h3 class="introduction_lot">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+            <p class="frame_text">
+              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
+            </p>
+          </section>
+          <section class="blackout"></section>
+        </section>
+        <div><a class="other_lots" href="#0">посмотреть больше</a></div>
+      </section>  
+         
       <section class="about">
-        <section class="logo_column" src="C:/Users/79122/Desktop/Ekaterina_D/first-project/ono-tebe-nado-fd/images/logo-black.svg"></section>
-        <section class="about_column"></section>
+        <section class="logo_column">
+          <div class="image_logo"></div>
+          <div class="black_background_image_logo"></div>
+        </section>
+        <section class="about_column">
+          <h4 class="head_column">об аукционе</h4>
+          <span class="column_text_start">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+          </span>
+          <span class="column_text_end">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
+            на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.
+          </span>
+        </section>
       </section>
 
      </main>
-    <footer>
-      <section class="contact"></section>
-      <section class="menu"></section>
-      <section class="socials"></section> 
-      <!-- </section> src="C:/Users/79122/Desktop/Ekaterina_D/first-project/ono-tebe-nado-fd/images/yt.svg";
-      src="C:/Users/79122/Desktop/Ekaterina_D/first-project/ono-tebe-nado-fd/images/vk.svg";
-      src="C:/Users/79122/Desktop/Ekaterina_D/first-project/ono-tebe-nado-fd/images/pinterest.svg"> -->
+    <footer class="footer">
+      <section class="contact footer_contact size">
+        <p class="discription_text">
+          <span class="discription_text_phone_number">+9 999 555 5555</span><br>
+          <span class="discription_text_mail">info@sobaka.ge</span><br>
+          <span class="discription_text_adress">наб. Принсенграхт 263-265,<br>Амстердам</span>
+        </p>
+      </section>
+      <nav  class="menu footer_menu">
+          <ul>
+            <ol class="footer_menu_list_active"><a href="#0">главная</a></ol>
+            <ol class="footer_menu_list_view_lots"><a href="#0">посмотреть лоты</a></ol>
+            <ol class="footer_menu_list_about_auction"><a href="#0">об аукционе</a></ol>
+          </ul>
+      </nav>
+      
+      <section class="socials">
+        <ul class="messenger">
+          <span class="footer_socials"><a href="#0"><img src="images/yt.svg" alt='ссылка на ютуб'></a></span>
+          <span class="footer_socials"><a href="#0"><img src="images/vk.svg" alt='ссылка на вк'></a></span>
+          <span class="footer_socials"><a href="#0"><img src="images/pinterest.svg" alt='ссылка на пинтерест'></a></span>
+        </ul>
+      </section> 
     </footer>
   </body>
 </html>
