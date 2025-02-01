@@ -18,11 +18,11 @@ body {
   place-content: center;
 }
 
-main { 
-  
+main {
+  width: 1100px;
+  height: 1023px;
   flex-direction: column;
-  font-family: Raleway, sans-serif;
-  place-items: center;
+  font-family: Raleway, sans-serif; /* стиль из global.css*/ 
 }
 
 h1,
